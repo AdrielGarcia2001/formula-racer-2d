@@ -1,0 +1,12 @@
+# 1) Servidor web
+php artisan serve --host=127.0.0.1 --port=8000
+
+# 2) WebSocket (Reverb)
+php artisan reverb:start --host=127.0.0.1 --port=8080
+
+# 3) Simulador de la sala 1 (por cada sala)
+php artisan race:simulate 1
+
+
+
+powershell -ExecutionPolicy Bypass -File scripts\demo-tunnel.ps1
